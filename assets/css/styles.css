@@ -87,6 +87,38 @@ img {
     }
 }
 
+/* WORD SWAP */
+
+
+.word-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .word {
+    position: absolute;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .word.visible {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .word > span {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+  }
+  
+  .word.visible > span {
+    transform: translateY(0%);
+  }
+
 /* BTN */
 
 .btn {
