@@ -84,6 +84,7 @@ img {
     /* CONTENT WRAPPER */
     #content-wrapper {
         padding-left: var(--sidbar-width);
+        padding-right: var(--sidbar-width);
     }
 }
 
