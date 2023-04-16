@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
 :root {
-    --color-body: #ffffff;
-    --color-heading: #d5d4d4;
-    --color-base: #353535;
-    --color-base2: #000000;
-    --color-brand: #9e9b7e;
-    --color-brand2: #898989;
+    --color-body: #000000;
+    --color-heading: #454545;
+    --color-base: #c8c8c8;
+    --color-base2: #ffffff;
+    --color-brand: #ff0000;
+    --color-brand2: #ff8282;
     --sidbar-width: 240px;
     --font-base: "Bai Jamjuree";
 }
@@ -78,12 +78,13 @@ img {
 
 .navbar {
     background-color: var(--color-base);
+    color: #000000;
 }
 
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .navbar .nav-link:hover {
@@ -98,7 +99,7 @@ img {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/sidebar-img.jpg);
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/sidebar-img.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -156,13 +157,13 @@ img {
 .btn-brand {
     background-color: var(--color-brand);
     border-color: var(--color-brand);
-    color: var(--color-base);   
+    color: var(--color-base2);
 }
 
 .btn-brand:hover,
 .btn-brand:focus {
     background-color: var(--color-brand2);
-    color: var(--color-base);
+    color: var(--color-base2);
     border-color: var(--color-brand2);
 }
 
