@@ -62,9 +62,18 @@ function toggleContent(event) {
   const extraContentId = event.target.getAttribute("data-extra-content-id");
   const extraContent = document.getElementById(extraContentId);
 
-  extraContent.classList.toggle("show");
+  if (extraContent.classList.contains("show")) {
+    extraContent.classList.remove("show");
+    setTimeout(() => {
+      extraContent.style.maxHeight = "0";
+    }, 10);
+  } else {
+    extraContent.style.maxHeight = "1000px";
+    extraContent.classList.add("show");
+  }
 
   const newText = event.target.textContent === "Read More" ? "Read Less" : "Read More";
   event.target.textContent = newText;
 }
+
 
