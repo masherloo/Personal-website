@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR -->
@@ -58,7 +59,7 @@
               <a class="nav-link" href="#publications">Publications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -89,8 +90,18 @@
                 Institute of Technology, working on 3D printing of metals.
               </p>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a class="btn btn-brand me-3" target="_blank" rel="noopener noreferrer" href="./assets/images/CV - Mohammadreza Asherloo.pdf" title="" download>Download CV</a>
-                <a href="#" class="link-custom">Call: (214) 725 6963</a>
+                <a
+                  class="btn btn-brand me-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="./assets/images/CV - Mohammadreza Asherloo.pdf"
+                  title=""
+                  download
+                  >Download CV</a
+                >
+                <a href="tel:214-725-6963" class="link-custom"
+                  >Call: (214) 725 6963</a
+                >
               </div>
             </div>
           </div>
@@ -105,7 +116,7 @@
           <div class="row pb-4" data-aos="fade-up">
             <div class="col-lg-10">
               <h6 class="text-brand">EXPERIENCE</h6>
-              <h1>My Professional Experiences As A PhD Candidate</h1>
+              <h1>My Professional Career</h1>
             </div>
           </div>
           <div class="row">
@@ -120,10 +131,19 @@
                   techniques to elucidate the underlying failure mechanisms in
                   pipeline steel materials.
                 </p>
-                <a href="#" class="link-custom">Read More</a>
+                <div class="extraContent" id="extraContent1">
+                  <p>
+                    <ul>
+                      <li>Conducted failure analysis on different steels, including pipelines, using metallurgical experiments such as metallography and optical microscopy (OM).</li>
+                      <li>Employed advanced characterization techniques such as energy-dispersive X-ray spectroscopy (EDS), electron backscatter diffraction (EBSD), X-ray diffraction (XRD), and scanning electron microscopy (SEM) to analyze failure mechanisms of the steels.</li>
+                      <li>Suggested potential solutions for preventing failures based on the results of the analyses.</li>
+                    </ul>
+                  </p>
+                </div>
+                <a href="#" class="link-custom" data-extra-content-id="extraContent1" onclick="toggleContent(event)">Read More</a>
               </div>
             </div>
-
+      
             <div class="col-md-4 pb-4" data-aos="fade-up" data-aos-delay="300">
               <div class="service p-4 bg-base rounded-5 shadow-effect">
                 <div class="iconbox rounded-4">
@@ -135,7 +155,18 @@
                   Scanning Electron Microscope (SEM) and providing comprehensive
                   training to students on the utilization of the equipment.
                 </p>
-                <a href="#" class="link-custom">Read More</a>
+                <div class="extraContent" id="extraContent2">
+                  <p>
+                    <ul>
+                      <li>Managed and maintained scanning electron microscopes (SEM) in the laboratory to ensure optimal performance and reliability.</li>
+                      <li>Troubleshot technical issues related to SEM equipment and performed routine maintenance tasks to ensure their proper functioning.</li>
+                      <li>Trained laboratory users on how to operate and maintain SEM equipment to obtain accurate and reliable results.</li>
+                      <li>Developed and implemented safety protocols to ensure the safe operation of the SEM equipment.</li>
+                      <li>Collaborated with laboratory staff to plan and execute experiments that require SEM imaging and analysis.</li>
+                    </ul>
+                  </p>
+                </div>
+                <a href="#" class="link-custom" data-extra-content-id="extraContent2" onclick="toggleContent(event)">Read More</a>
               </div>
             </div>
 
@@ -150,12 +181,24 @@
                   utilizing state-of-the-art techniques such as Laser Powder Bed
                   Fusion (LPBF) and Binder Jetting Process (BJP).
                 </p>
-                <a href="#" class="link-custom">Read More</a>
+                <div class="extraContent" id="extraContent3">
+                  <p>
+                    <ul>
+                      <li><strong><em>Titanium alloys:</em></strong><em>&nbsp;</em>working on&nbsp;<strong>Laser Powder Bed Fusion</strong>&nbsp;of Ti-6Al-4V non-spherical powder produced by hydride-dehydride (HDH) process including the printing process, post-processing, advanced characterization (XRD, EBSD, DSC, SEM, and TEM), and electrochemical and mechanical properties of the printed parts.</li>
+                      <li><strong><em>Nickel alloys:&nbsp;</em></strong>investigating the effects of various processing parameters on&nbsp;<strong>Laser Powder Bed Fusion</strong>&nbsp;of INCO718 alloy including the printing process, advanced characterization, and mechanical properties of the printed parts.</li>
+                      <li><strong><em>Iron alloys:</em></strong><em>&nbsp;</em>investigating the effect of temperature and dwelling time of sintering process on the mechanical and physical properties of&nbsp;<strong>Binder-Jet</strong>&nbsp;3D Printed of ultra-fine 316L Stainless Steel powder.</li>
+                      <li><strong><em>Ti-Ni</em></strong><em>&nbsp;<strong>alloys:</strong>&nbsp;</em>investigating the effect of time and temperature on the diffusion process of Ti-Ni alloy by utilizing a Ti-Ni diffusion couple.</li>
+                    </ul>
+                  </p>
+                </div>
+                <a href="#" class="link-custom" data-extra-content-id="extraContent3" onclick="toggleContent(event)">Read More</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    
 
       <!-- // EXPERIENCE -->
 
@@ -165,7 +208,18 @@
         <div class="container">
           <div class="row pb-4" data-aos="fade-up">
             <div class="col-lg-10">
-              <h6 class="text-brand">PUBLICATIONS</h6>
+              <h6 class="text-brand">
+                PUBLICATIONS&nbsp;&nbsp;
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://scholar.google.com/citations?hl=en&user=6pqd4fAAAAAJ"
+                  class="link-custom b"
+                >
+                  Google Scholar
+                  <i class="las la-external-link-alt"></i>
+                </a>
+              </h6>
               <h1>Selected Publications</h1>
             </div>
           </div>
@@ -187,12 +241,18 @@
                     non-spherical Ti-6Al-4V powder to produce >99.9% dense
                     parts.
                   </p>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/science/article/pii/S2214860422002743" class="link-custom">Read More</a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.sciencedirect.com/science/article/pii/S2214860422002743"
+                    class="link-custom"
+                    >Read More</a
+                  >
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
               <div class="card-custom rounded-5 bg-base shadow-effect">
                 <div class="card-custom-image rounded-5">
                   <img
@@ -204,10 +264,16 @@
                 <div class="card-custom-content p-4">
                   <h4>BJP of SS316L</h4>
                   <p>
-                    Optimization of BJP process for the ultra-fine SS316L powder to produce >99% dense
-                    parts.
+                    Optimization of BJP process for the ultra-fine SS316L powder
+                    to produce >99% dense parts.
                   </p>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/science/article/pii/S221486042200522X" class="link-custom">Read More</a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.sciencedirect.com/science/article/pii/S221486042200522X"
+                    class="link-custom"
+                    >Read More</a
+                  >
                 </div>
               </div>
             </div>
@@ -224,37 +290,217 @@
                 <div class="card-custom-content p-4">
                   <h4>Fatigue Analysis</h4>
                   <p>
-                    Investigation of fatigue performance of LPBF processed cost-efficient non-spherical Ti-6Al-4V powder.
+                    Investigation of fatigue performance of LPBF processed
+                    cost-efficient non-spherical Ti-6Al-4V powder.
                   </p>
-                  <a target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/science/article/pii/S2214860422005061" class="link-custom">Read More</a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.sciencedirect.com/science/article/pii/S2214860422005061"
+                    class="link-custom"
+                    >Read More</a
+                  >
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
       <!-- // PUBLICATIONS -->
 
-      <!-- ABOUT -->
-      <section id="about">
+      <!-- EDUCATION -->
+      <section id="education" class="full-height px-lg-5">
         <div class="container">
           <div class="row pb-4" data-aos="fade-up">
             <div class="col-lg-10">
-              <h6 class="text-brand">ABOUT</h6>
-              <h1>Selected Publications</h1>
+              <h6 class="text-brand">EDUCATION</h6>
+              <h1>My Academic Journey</h1>
+            </div>
+          </div>
+
+          <div class="row gy-lg-5">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="custom-card shadow-effect rounded-5">
+                <div class="card-custom-content bg-base p-4 rounded-5 mb-4">
+                  <h5>PhD in Materials Science and Engineering</h5>
+                  <p class="text-brand mb-2">
+                    Illinois Institute of Technology (2020 - 2024)
+                  </p>
+                  <p class="mb-0">
+                    Currently pursuing a PhD in Materials Science and
+                    Engineering, I am deeply committed to advancing the field
+                    through my research on laser powder bed fusion of Ti-6Al-4V
+                    alloy, aiming to unlock the potential of additive
+                    manufacturing for high-performance applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="custom-card shadow-effect rounded-5">
+                <div
+                  class="card-custom-content bg-base p-4 rounded-5 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <h5>M.Sc. in Materials Science and Engineering</h5>
+                  <p class="text-brand mb-2">
+                    Illinois Institute of Technology (2020 - 2022)
+                  </p>
+                  <p class="mb-0">
+                    During my Master's in Materials Science and Engineering, I
+                    honed my expertise in materials characterization and
+                    processing techniques, with a focus on developing innovative
+                    materials for advanced applications, setting the foundation
+                    for my continued research in the field.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="900">
+              <div class="custom-card shadow-effect rounded-5">
+                <div
+                  class="card-custom-content bg-base p-4 rounded-5 mb-4"
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                >
+                  <h5>B.Sc. in Materials Science and Engineering</h5>
+                  <p class="text-brand mb-2">
+                    K. N. Toosi University of Technology (2015 - 2019)
+                  </p>
+                  <p class="mb-0">
+                    Obtaining a Bachelor's degree in Materials Science and
+                    Engineering, I gained a solid understanding of fundamental
+                    materials concepts, laying the groundwork for my passion in
+                    exploring and developing advanced materials to address
+                    complex engineering challenges.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- // ABOUT -->
+      <!-- // EDUCATION -->
+
+      <!-- CONTACT -->
+      <section id="contact" class="full-height px-lg-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8 pb-4" data-aos="fade-up">
+              <h6 class="text-brand">CONTACT</h6>
+              <h1>
+                What's on your mind? <br />
+                Let me know!
+              </h1>
+            </div>
+
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+              <form method="POST" name="EmailForm" class="row g-lg-3 gy-3">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter subject"
+                    name="subject"
+                    required
+                  />
+                </div>
+                <div class="form-group col-12">
+                  <textarea
+                    name="message"
+                    rows="4"
+                    class="form-control"
+                    placeholder="Enter your message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-group col-12 d-grid">
+                  <button
+                    type="submit"
+                    class="btn btn-brand"
+                    value="Send Message"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // CONTACT -->
+
+      <!-- FOOTER -->
+      <footer class="py-5 px-3">
+        <div class="container">
+          <div class="row gy-4 justify-content-between">
+            <div class="col-auto">
+              <p class="mb-0">&copy; 2023 Mohammadreza Asherloo</p>
+            </div>
+            <div class="col-auto">
+              <div class="social-icons">
+                <a
+                  href="https://twitter.com/MRAsherloo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="lab la-twitter"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/mrasherloo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="lab la-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/m.r.asherloo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="lab la-instagram"></i
+                ></a>
+                <a
+                  href="https://t.me/MR_Asherloo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="lab la-telegram"></i
+                ></a>
+                <a
+                  href="https://github.com/masherloo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="lab la-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- // FOOTER -->
     </div>
     <!-- // CONTENT WRAPPER -->
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/main.js"></script>
-    </script>
   </body>
 </html>
